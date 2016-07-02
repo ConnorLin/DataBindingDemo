@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="user"
+            type="com.connorlin.databinding.model.User"/>
+
+        <variable
+            name="url"
+            type="String"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 这里的object为自定义属性 -->
+        <com.connorlin.databinding.view.Card
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:object="@{user}"/>
+
+        <!-- 当url存在时，会自动调用注解方法，即Utils中得loadImage()-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:imageUrl="@{url}"
+            app:error="@{@drawable/ic_launcher}"/>
+        <!-- 此处不能使用mipmap，会编译不过 -->
+
+    </LinearLayout>
+
+</layout>

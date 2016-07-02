@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.connorlin.databinding"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".context.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".context.DemoActivity">
+            <intent-filter>
+                <action android:name="connorlin.databinding.action.Demo"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".context.CombineActivity">
+            <intent-filter>
+                <action android:name="connorlin.databinding.action.Combine"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".context.TwoWayActivity">
+            <intent-filter>
+                <action android:name="connorlin.databinding.action.TwoWay"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".context.EventActivity">
+            <intent-filter>
+                <action android:name="connorlin.databinding.action.Event"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".context.ViewStubActivity">
+            <intent-filter>
+                <action android:name="connorlin.databinding.action.ViewStub"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".context.AttributeSettersActivity">
+            <intent-filter>
+                <action android:name="connorlin.databinding.action.AttributeSetters"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".context.ConvertersActivity">
+            <intent-filter>
+                <action android:name="connorlin.databinding.action.Converters"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".context.NormalObjectActivity">
+            <intent-filter>
+                <action android:name="connorlin.databinding.action.NormalObject"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".context.ObserverActivity">
+            <intent-filter>
+                <action android:name="connorlin.databinding.action.Observer"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".context.ObserverFieldActivity">
+            <intent-filter>
+                <action android:name="connorlin.databinding.action.ObserverField"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".context.ObserverCollectionActivity">
+            <intent-filter>
+                <action android:name="connorlin.databinding.action.ObserverCollection"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

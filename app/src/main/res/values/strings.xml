@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">DataBindingDemo</string>
+    <string name="empty">Empty</string>
+    <string name="add_contact">Add contacts</string>
+    <string name="phone">Phone</string>
+
+    <string name="firstname">FirstName: %1$s</string>
+    <string name="lastname">LastName: %1$s</string>
+    <string name="fullname">FullName: %1$s</string>
+    <string name="string_from_context">String from context</string>
+    <string name="method_preference">Method Preference</string>
+    <string name="listener_binding_empty_params">Listener binding empty params</string>
+    <string name="listener_binding_arbitrary_params">Listener binding arbitrary params</string>
+    <string name="listener_binding_params">Listener binding params</string>
+    <string name="inflate_viewstub">Inflate the viewstub</string>
+    <string name="converter">Converter</string>
+
+    <plurals name="sample_plurals">
+        <item quantity="zero">zero</item>
+        <item quantity="one">one</item>
+        <item quantity="other">other</item>
+    </plurals>
+
+    <plurals name="numbers">
+        <item quantity="one">Have an number</item>
+        <item quantity="other">Have %1$d numbers</item>
+    </plurals>
+</resources>

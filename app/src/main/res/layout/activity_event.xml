@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="handler"
+            type="com.connorlin.databinding.handler.EventHandler"/>
+
+        <variable
+            name="task"
+            type="com.connorlin.databinding.task.Task"/>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 方法调用 -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:onClick="@{handler::onClickFriend}"
+            android:text="@string/method_preference"
+            android:textAllCaps="false"/>
+
+        <!-- 监听绑定，lambda表达式-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:onClick="@{() -> handler.onTaskClick(task)}"
+            android:text="@string/listener_binding_empty_params"
+            android:textAllCaps="false"/>
+
+        <!-- 多个参数，参数可任意命名 -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:onClick="@{(theview) -> handler.onTaskClickWithParams(theview, task)}"
+            android:text="@string/listener_binding_arbitrary_params"
+            android:textAllCaps="false"/>
+
+        <!-- 多个参数，参数可任意命名 -->
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onCheckedChanged="@{(cb, isChecked) -> handler.onCompletedChanged(task, isChecked)}" />
+    </LinearLayout>
+</layout>
