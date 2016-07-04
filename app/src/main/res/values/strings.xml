@@ -25,4 +25,6 @@
         <item quantity="one">Have an number</item>
         <item quantity="other">Have %1$d numbers</item>
     </plurals>
+
+    <string name="zhuanti">白舟篆古印</string>
 </resources>

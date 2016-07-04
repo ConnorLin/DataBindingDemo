@@ -32,6 +32,15 @@
             app:error="@{@drawable/ic_launcher}"/>
         <!-- 此处不能使用mipmap，会编译不过 -->
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:padding="@dimen/activity_vertical_margin"
+            android:gravity="center"
+            android:text="@{@string/zhuanti}"
+            app:font="@{`zhuanti`}"/>
+
     </LinearLayout>
 
 </layout>
