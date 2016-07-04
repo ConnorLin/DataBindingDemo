@@ -32,7 +32,7 @@
             android:ems="10"
             android:hint="Name"
             android:inputType="textPersonName"
-            android:text="@{contact.name}"/>
+            android:text="@={contact.name}"/>
 
         <EditText
             android:id="@+id/edit_phone"
@@ -43,7 +43,7 @@
             android:ems="10"
             android:hint="@string/phone"
             android:inputType="phone"
-            android:text="@{contact.phone}"/>
+            android:text="@={contact.phone}"/>
 
         <ListView
             android:id="@+id/listView"
